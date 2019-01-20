@@ -13,6 +13,8 @@ class CreateProject extends Component {
       [e.target.id]: e.target.value
     });
   };
+
+
   handleSubmit = e => {
     e.preventDefault();
     this.props.createProject(this.state);
