@@ -9,7 +9,7 @@ const ProjectSummary = ({ project }) => {
           <p>
             Posted by {project.authorFirstName} {project.authorLastName}
           </p>
-          <p className="grey-text">15 January, 18pm</p>
+          <p className="grey-text">{project.createdAt.slice(0, 15)}</p>
         </div>
       </div>
     </div>

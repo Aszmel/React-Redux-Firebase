@@ -19,7 +19,7 @@ const ProjectDetails = props => {
             <div>
               Posted by {project.authorFirstName} {project.authorLastName}
             </div>
-            <div>15 January, 2pm</div>
+            <div>{project.createdAt.slice(0, 15)}</div>
           </div>
         </div>
       </div>
